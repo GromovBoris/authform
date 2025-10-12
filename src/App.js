@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import AuthForm from "./components/AuthForm/AuthForm";
+import styles from "./App.css";
+import { Typography } from "antd";
+const { Text, Title, Paragraph } = Typography;
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="container">
+        <div className="image-container">
+          <img src="/Symbol.png" alt="symbol" />
+          <img src="/Company.png" alt="company" />
+        </div>
+        <Title level={3} style={{ fontSize: "1.5rem" }}>
+          Sign in to your account to continue
+        </Title>
+      </div>
+      <AuthForm />
     </div>
   );
-}
+};
 
 export default App;
