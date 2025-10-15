@@ -1,34 +1,18 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-}
-
-#root {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@font-face {
+/* @font-face {
   font-family: "SF Pro Text";
-  src: url("./fonts/sf-pro-text-regular.woff2") format("woff2"),
-    url("./fonts/sf-pro-text-regular.woff") format("woff");
+  src: url("../../fonts/sf-pro-text-regular.woff2") format("woff2"),
+    url("../../fonts/sf-pro-text-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+} */
+
+.login-title {
+  margin-top: 0.25rem;
+  height: 4rem;
+  text-align: center;
 }
 
-.login-title-text {
+/* .login-title-text {
   color: var(--colorText, rgba(0, 0, 0, 0.88));
   font-family: var(--Typography-Font-Family-fontFamily, "SF Pro Text");
   font-size: var(--Typography-Font-Size-fontSizeHeading3, 24px);
@@ -36,4 +20,4 @@ body {
   font-weight: var(--Typography-Font-Weight-fontWeightStrong, 600);
   line-height: var(--Typography-Line-Height-lineHeightHeading3, 32px);
   letter-spacing: 0.025rem;
-}
+} */

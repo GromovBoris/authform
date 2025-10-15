@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import LoginForm from "../LoginForm";
-import TwoFactor from "../TwoFactor";
+import LoginForm from "../LoginForm/LoginForm";
+import TwoFactor from "../TwoFactorForm/TwoFactorForm";
 
 const AuthForm = () => {
   const [isTwoFactor, setIsTwoFactor] = useState(false);

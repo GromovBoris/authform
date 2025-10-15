@@ -1,23 +1,12 @@
-.custom-heading {
-  font-family: "Font Family";
-  font-weight: 600;
-  letter-spacing: 0%;
-  text-align: center;
-  vertical-align: middle;
-}
-
 .container {
-  width: 376px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 440px;
   margin: 0 auto;
   text-align: center;
   background-color: white;
   padding: 2rem;
-}
-
-.image-container {
-  display: flex;
-  gap: 10px;
-  width: auto;
-  justify-content: center;
-  align-items: center;
+  border-radius: 0.4rem;
 }
