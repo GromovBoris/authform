@@ -54,7 +54,11 @@ const TwoFactorForm = () => {
           />
         ))}
       </div>
-      {isAllFilled && <button onClick={submitCode}>Подтвердить</button>}{" "}
+      {isAllFilled && (
+        <button className="button active continue" onClick={submitCode}>
+          Continue
+        </button>
+      )}{" "}
     </div>
   );
 };
