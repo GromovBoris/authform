@@ -1,0 +1,33 @@
+.factor-container {
+  text-align: center;
+  width: 100%;
+}
+
+.code-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2.8rem;
+}
+
+.digit-input {
+  width: 42px;
+  height: 60px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.digit-input:first-child {
+  margin-left: 0;
+}
+
+.digit-input:last-child {
+  margin-right: 0;
+}
+
+.digit-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
