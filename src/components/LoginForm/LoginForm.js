@@ -37,8 +37,8 @@ const LoginForm = ({ onSuccess }) => {
 
   return (
     <form className="login-form" onSubmit={onSubmit}>
-      <div className="input-container">
-        <img src="/profile.png" alt="profil" className="icon" />
+      <div className="login-form__input-container">
+        <img src="/profile.png" alt="profil" className="login-form__icon" />
         <input
           type="text"
           id="login"
@@ -49,8 +49,8 @@ const LoginForm = ({ onSuccess }) => {
           required
         />
       </div>
-      <div className="input-container">
-        <img src="/password.png" alt="password" className="icon" />
+      <div className="login-form__input-container">
+        <img src="/password.png" alt="password" className="login-form__icon" />
         <input
           type="password"
           id="password"
@@ -63,7 +63,9 @@ const LoginForm = ({ onSuccess }) => {
       </div>
       <button
         type="submit"
-        className={`${isButtonActive ? "button active" : "button"}`}
+        className={`login-form__button ${
+          isButtonActive ? "login-form__button--active" : ""
+        }`}
         disabled={!isButtonActive}
       >
         Log in

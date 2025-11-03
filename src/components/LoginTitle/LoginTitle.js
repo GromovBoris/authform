@@ -5,14 +5,14 @@ const { Title, Text } = Typography;
 
 const LoginTitle = ({ isAuthenticated }) => {
   return (
-    <div className="login-title">
-      <Title level={3} className="login-title-text">
+    <div className="login-title__container">
+      <Title level={3} className="login-title__text">
         {isAuthenticated
           ? "Two-Factor Authentication"
           : "Sign in to your account to continue"}
       </Title>
       {isAuthenticated && (
-        <Text type="secondary" className="secondary">
+        <Text type="secondary" className="login-title__secondary">
           Enter the 6-digit code from the Google Authenticator app
         </Text>
       )}

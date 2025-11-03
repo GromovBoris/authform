@@ -10,3 +10,37 @@
   padding: 2rem;
   border-radius: 0.4rem;
 }
+
+.login-form__input-container,
+.login-form__button,
+.two-factor-form__button {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border: 0.5px solid #ccc;
+  border-radius: 0.4rem;
+}
+
+.login-form__button,
+.two-factor-form__button {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  background-color: #f5f5f5;
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-form__button--active,
+.two-factor-form__button--active {
+  background-color: #1677ff;
+  color: white;
+  cursor: pointer;
+}

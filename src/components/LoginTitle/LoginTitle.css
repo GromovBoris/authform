@@ -1,14 +1,14 @@
-.login-title {
+.login-title__container {
   margin-top: 0.25rem;
   height: 4rem;
   text-align: center;
 }
 
-.login-title h3 {
+.login-title__text {
   margin: 0;
 }
 
-.secondary {
+.login-title__secondary {
   font-size: 1.05rem;
   letter-spacing: 0.005em;
 }
