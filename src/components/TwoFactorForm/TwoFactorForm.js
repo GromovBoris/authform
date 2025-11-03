@@ -78,15 +78,16 @@ const TwoFactorForm = () => {
       setIsInputDisabled(true);
     }, 5000);
   };
+
   return (
-    <div className="factor-container">
-      <div className="code-container">
+    <div className="two-factor-form__container">
+      <div className="two-factor-form__code-container">
         {Array.from({ length: 6 }).map((_, index) => (
           <input
             key={index}
             type="text"
             maxLength="1"
-            className="digit-input"
+            className="two-factor-form__digit-input"
             ref={(el) => (inputRefs.current[index] = el)}
             onInput={(e) => {
               if (e.target.value.length === 1) {
@@ -103,18 +104,25 @@ const TwoFactorForm = () => {
             disabled={isInputDisabled && isCodeValid}
           />
         ))}
-      </div>{" "}
-      {errorMessage && <div className="error-message">{errorMessage}</div>}
+      </div>
+      {errorMessage && (
+        <div className="two-factor-form__error-message">{errorMessage}</div>
+      )}
       {isAllFilled ? (
         <button
-          className={`button active continue ${errorMessage ? "disabled" : ""}`}
-          onClick={() => alert("Continue clicked!")}
+          className={`two-factor-form__button two-factor-form__button--active ${
+            errorMessage ? "two-factor-form__button--disabled" : ""
+          }`}
+          onClick={() => alert("correct code entered")}
           disabled={!isAllFilled || !isCodeValid}
         >
           Continue
         </button>
       ) : showGetNewButton ? (
-        <button className="button active continue" onClick={handleGetNewClick}>
+        <button
+          className="two-factor-form__button two-factor-form__button--active"
+          onClick={handleGetNewClick}
+        >
           Get New
         </button>
       ) : null}
