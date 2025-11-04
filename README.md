@@ -1,7 +1,7 @@
 # authform_test
 2FA form interface, test task.
 
-gromovboris.github.io/authform/
+https://gromovboris.github.io/authform/
 
 <u>Valid values</u>
 email: test@test.com
